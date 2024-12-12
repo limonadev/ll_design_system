@@ -13,3 +13,23 @@ flutter:
   assets:
     - .
     - icons/
+  fonts:
+    - family: Lato
+      fonts:
+        - asset: fonts/Lato/Lato-Black.ttf
+          weight: 900
+        - asset: fonts/Lato/Lato-BlackItalic.ttf
+          weight: 900
+          style: italic
+        - asset: fonts/Lato/Lato-Bold.ttf
+          weight: 700
+        - asset: fonts/Lato/Lato-BoldItalic.ttf
+          weight: 700
+          style: italic
+        - asset: fonts/Lato/Lato-Light.ttf
+          weight: 300
+        - asset: fonts/Lato/Lato-Italic.ttf
+          weight: 400
+          style: italic
+        - asset: fonts/Lato/Lato-Regular.ttf
+          weight: 400
