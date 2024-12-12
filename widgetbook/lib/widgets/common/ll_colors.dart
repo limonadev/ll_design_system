@@ -8,12 +8,12 @@ import 'package:widgetbook_annotation/widgetbook_annotation.dart' as widgetbook;
 @widgetbook.UseCase(name: 'LLColors', type: ColorSelector)
 Widget buildLLRoundedContainer(BuildContext context) {
   final containerSize = context.knobs.double.input(
-    label: 'Container Size',
     initialValue: 75,
+    label: 'Container Size',
   );
 
   return ColoredBox(
-    color: Colors.black,
+    color: LLColor.black,
     child: Wrap(
       spacing: 25,
       runSpacing: 25,
@@ -28,11 +28,11 @@ Widget buildLLRoundedContainer(BuildContext context) {
                   ClipboardData(text: colorIdentifier),
                 );
                 Fluttertoast.showToast(
-                  backgroundColor: Colors.red,
+                  backgroundColor: LLColor.red,
                   fontSize: 16,
                   gravity: ToastGravity.BOTTOM_RIGHT,
                   msg: 'Copied',
-                  textColor: Colors.white,
+                  textColor: LLColor.text,
                   toastLength: Toast.LENGTH_SHORT,
                   webBgColor: '#00000000',
                 );
@@ -67,7 +67,7 @@ class ColorSelector extends StatelessWidget {
     return LLRoundedContainer.small(
       alignment: Alignment.center,
       backgroundColor: color,
-      borderColor: Colors.white,
+      borderColor: LLColor.text,
       height: containerSize,
       width: containerSize,
     );

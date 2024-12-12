@@ -20,8 +20,8 @@ class ContainerTypeKnob extends Knob<ContainerType> {
     required ContainerType initialValue,
   }) {
     return ContainerTypeKnob._(
-      label: label,
       initialValue: initialValue,
+      label: label,
     );
   }
 

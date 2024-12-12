@@ -9,37 +9,37 @@ Widget buildLLRoundedContainer(BuildContext context) {
   final type = context.knobs.containerType(label: 'Type');
 
   final alignment = context.knobs.alignmentOrNull(
-    label: 'Alignment',
     initialValue: Alignment.center,
+    label: 'Alignment',
   );
   final backgroundColor = context.knobs.colorOrNull(
+    initialValue: LLColor.text,
     label: 'Background color',
-    initialValue: Colors.white,
   );
   final borderColor = context.knobs.colorOrNull(
+    initialValue: LLColor.black,
     label: 'Border color',
-    initialValue: Colors.black,
   );
   final height = context.knobs.doubleOrNull.input(
-    label: 'Height',
     initialValue: 100,
+    label: 'Height',
   );
   final margin = context.knobs.edgeInsetsOrNull(
-    label: 'Margin',
     initialValue: EdgeInsets.zero,
+    label: 'Margin',
   );
   final padding = context.knobs.edgeInsetsOrNull(
-    label: 'Padding',
     initialValue: EdgeInsets.zero,
+    label: 'Padding',
   );
   final width = context.knobs.doubleOrNull.input(
-    label: 'Width',
     initialValue: 100,
+    label: 'Width',
   );
   final child = FlutterLogo(
     size: context.knobs.doubleOrNull.input(
-      label: 'Logo Size',
       initialValue: 25,
+      label: 'Logo Size',
     ),
   );
 

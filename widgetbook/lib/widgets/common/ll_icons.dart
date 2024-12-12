@@ -8,24 +8,24 @@ import 'package:widgetbook_annotation/widgetbook_annotation.dart' as widgetbook;
 @widgetbook.UseCase(name: 'LLIcons', type: LLIcon)
 Widget buildLLRoundedContainer(BuildContext context) {
   final containerSize = context.knobs.double.input(
-    label: 'Container Size',
     initialValue: 75,
+    label: 'Container Size',
   );
   final iconColor = context.knobs.colorOrNull(
+    initialValue: LLColor.black,
     label: 'Icon Color',
-    initialValue: Colors.black,
   );
   final iconFit = context.knobs.listOrNull(
     label: 'Icon Fit',
     options: BoxFit.values,
   );
   final iconHeight = context.knobs.double.input(
-    label: 'Icon Height',
     initialValue: 25,
+    label: 'Icon Height',
   );
   final iconWidth = context.knobs.double.input(
-    label: 'Icon Width',
     initialValue: 25,
+    label: 'Icon Width',
   );
 
   return Wrap(
@@ -42,11 +42,11 @@ Widget buildLLRoundedContainer(BuildContext context) {
                 ClipboardData(text: iconIdentifier),
               );
               Fluttertoast.showToast(
-                backgroundColor: Colors.black,
+                backgroundColor: LLColor.black,
                 fontSize: 16,
                 gravity: ToastGravity.BOTTOM_RIGHT,
                 msg: 'Copied',
-                textColor: Colors.white,
+                textColor: LLColor.text,
                 toastLength: Toast.LENGTH_SHORT,
                 webBgColor: '#00000000',
               );
@@ -55,8 +55,8 @@ Widget buildLLRoundedContainer(BuildContext context) {
               message: iconIdentifier,
               child: LLRoundedContainer.small(
                 alignment: Alignment.center,
-                backgroundColor: Colors.white,
-                borderColor: Colors.black,
+                backgroundColor: LLColor.text,
+                borderColor: LLColor.black,
                 height: containerSize,
                 width: containerSize,
                 child: LLIcon(

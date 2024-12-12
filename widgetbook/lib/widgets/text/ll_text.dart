@@ -391,7 +391,7 @@ Widget buildLLTextSubtitle1(BuildContext context) {
 
 _Fields _getCommonFields(BuildContext context) {
   final color = context.knobs.colorOrNull(
-    initialValue: Colors.white,
+    initialValue: LLColor.text,
     label: 'Color',
   );
   final maxLines = context.knobs.intOrNull.input(
@@ -464,11 +464,11 @@ Widget _buildWrapper({
 
   return LLRoundedContainer.xsmall(
     backgroundColor: context.knobs.colorOrNull(
-      initialValue: Colors.black,
+      initialValue: LLColor.black,
       label: 'Background Container Color',
     ),
     borderColor: context.knobs.colorOrNull(
-      initialValue: Colors.white,
+      initialValue: LLColor.text,
       label: 'Border Container Color',
     ),
     child: wrapper,
