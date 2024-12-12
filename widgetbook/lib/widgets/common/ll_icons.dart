@@ -42,7 +42,7 @@ Widget buildLLRoundedContainer(BuildContext context) {
                 ClipboardData(text: iconIdentifier),
               );
               Fluttertoast.showToast(
-                backgroundColor: Colors.red,
+                backgroundColor: Colors.black,
                 fontSize: 16,
                 gravity: ToastGravity.BOTTOM_RIGHT,
                 msg: 'Copied',

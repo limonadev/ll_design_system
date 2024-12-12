@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ll_design_system/styles/ll_color.dart';
 
 class LLTheme {
   static TextStyle body1({
@@ -511,7 +512,7 @@ class LLTheme {
       fontSize: adjustedSize,
       fontWeight: fontWeight,
       height: height ?? adjustedHeight,
-      color: color ?? Colors.white,
+      color: color ?? LLColor.text,
       decoration: decoration,
       fontFamily: fontFamily ?? 'Lato',
       fontStyle: fontStyle,

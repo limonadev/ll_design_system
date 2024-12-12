@@ -1,6 +1,7 @@
 library ll_design_system;
 
 /// Styles exported from the LL Design System.
+export 'styles/ll_color.dart';
 export 'styles/ll_theme.dart';
 
 /// Widgets exported from the LL Design System.
